@@ -1,26 +1,17 @@
-# EmpowerChain
-![image](https://docs.empowerchain.io/assets/empowerchain-banner.f628b327.png)
-
+# PowerPool
+![Ekran görüntüsü 2023-08-21 190255](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/a3c17b1b-4232-49ef-bd8a-719b32b11ae7)
 ## Ödüllü Testnete Katılım
-* Ödüllü Testnete katılmak için [BURADAN](https://docs.google.com/forms/d/e/1FAIpQLSe1kuSWQq_zaxeR9Fn2lx2VsF073pY2jgGNJHz4obPCF7yYGg/viewform) formu doldurmayı UNTUMAYIN!
-* Empowerchain [DİSCORD](https://discord.gg/tf8WRDCBrj) kanalına katılalım.
+* Ödüllü Testnete katılmak için [BURADAN]() formu doldurmayı UNTUMAYIN!
+* Empowerchain [DİSCORD](https://discord.gg/5W5B2xTzzT) kanalına katılalım.
 
 ## Kurulum Öncesi Notlar
-### Testnet 3 aşamadan oluşuyor
-* 31 Mayıs - 6 Haziran: Ağ önyükleme aşaması
-* 7 Haziran - 20 Haziran: Ana aşama
-* 21 Haziran - 25 Haziran: Stres testi aşaması
-#### Ödüller 1 yıl lineer vestingli dağıtılacak!!
-[BURADAN](https://docs.empowerchain.io/testnet/overview) deatayları okuyabilirsiniz.
+### Testnete seçilmediyseniz aşağıdaki adımları yapmanıza gerek yok.
+### Bu adımlar testnete katılmaya hak kazananlar için hazırlanmıştır.
 
-![odul](https://github.com/CoinHuntersTR/EmpowerChain/assets/111747226/bd772e32-8435-49ac-91ac-9cf48ea78e64)
-
-
-* Testnet sonunda KYC olacak
 ## Sistem gereksinimleri:
 NODE TİPİ | CPU     | RAM      | SSD     |
 | ------------- | ------------- | ------------- | -------- |
-| Empower | 4          | 8        | 200  |
+| PowePool | 4          | 8        | 200  |
  
 
 ![hetzner](https://github.com/CoinHuntersTR/EmpowerChain/assets/111747226/46d2e1ea-0714-4061-b5a2-476be023cfd0)
