@@ -17,24 +17,37 @@ NODE TİPİ | CPU     | RAM      | SSD     |
 ![hetzner](https://github.com/CoinHuntersTR/EmpowerChain/assets/111747226/46d2e1ea-0714-4061-b5a2-476be023cfd0)
 
 * Hetzner için bu gereksinimleri almka yeterli olacaktır.
-Hetzner kaydınız yok ise [BURADAN](https://hetzner.cloud/?ref=ew4WgPUfxeyJ) linke basıp 20€ değerinde ödül kazanıp, testnete katılabilirsiniz.
+Hetzner kaydınız yok ise [BURADAN](https://hetzner.cloud/?ref=ha9qP7tGjvcR) linke basıp 20€ değerinde ödül kazanıp, testnete katılabilirsiniz.
 
-## Script ile kurulum;
+## Güncellemeleri yapıyoruz.
 ```
-curl -sSL -o empower-kurulum.sh https://raw.githubusercontent.com/CoinHuntersTR/EmpowerChain/main/empower-kurulum.sh && chmod +x empower-kurulum.sh && bash ./empower-kurulum.sh
+sudo apt update
 ```
-* Tek bu kodu çalıştırmanız yeterli olacaktır.
 
-## Kurulum tamamlandıktan sonra;
 ```
-source $HOME/.bash_profile
+sudo apt update
 ```
-## Logları Görüntüleme
-```
- sudo journalctl -u empowerd -fo cat
-```
-![log-kaydi](https://github.com/CoinHuntersTR/EmpowerChain/assets/111747226/b92c90fb-7788-411b-a6f8-adc31e9884dc)
 
+
+## Dappnode Kurulumu
+```
+sudo wget -O - https://prerequisites.dappnode.io | sudo bash
+```
+```
+sudo wget -O - https://installer.dappnode.io | sudo bash
+```
+
+## Profili açıyoruz.
+```
+source /usr/src/dappnode/DNCORE/.dappnode_profile
+```
+```
+dappnode_status
+```
+
+## WireGuard İndiriyoruz.
+[BURADAN](https://www.wireguard.com/install/)
+indiriyoruz ve bilgisayarımıza yüklüyoruz.
 
 ## Cüzdan Oluşturma;
 ```
