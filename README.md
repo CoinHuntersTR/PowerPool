@@ -48,13 +48,15 @@ dappnode_status
 ## WireGuard İndiriyoruz.
 [BURADAN](https://www.wireguard.com/install/)
 indiriyoruz ve bilgisayarımıza yüklüyoruz.
+* Hangi tip bilgisayar kullanıyorsanız ona uygun olmalı.
 
-## Cüzdan Oluşturma;
+## WireGuard Arayüzü
+* Bu komut ile verilecek olan bilgileri bir yere not edin.
 ```
-empowerd keys add cüzdanadi
+dappnode_wireguard
 ```
-* "cüzdanadi" bölümüne istediğiniz bir isim verebilirsiniz.,
-*  Cüzdanınızı oluşturduktan sonra size verilen gizli kelimelerinizi ve cüzdan adresinizi bir yere not etmeyi unutmayın.
+![Ekran görüntüsü 2023-08-21 190255](https://640488913-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MJqrcOKqAefjDPcq_0d%2Fuploads%2FiWtiBVajYPYCcmbKmtL6%2Fimage.png?alt=media&token=39a5fe23-c5d0-42e5-8c5b-9587e72fb39d
+)
 
 ## Sync Kontrolü
 * False dönene kadar başka işlem yapmanıza gerek yok!
