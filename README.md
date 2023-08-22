@@ -121,4 +121,28 @@ node jsongen.js "workerprivatekey" "şifre"
 * şifre worker private key yüklerken yazdığımız şifreyi ekliyoruz.
 * web stock RPC adresine ws://sepolia-geth.dappnode:8546 bunu ekliyoruz.
 * kayıt edip yüklenmesini bekliyoruz.
-* 
+* Sepolia Geth senkronize olmasını bekliyoruz. Bu adımları tamamladıysak diğer bölüme geçelim.
+
+[BURADAN](https://sepolia.etherscan.io/address/0xD5134EcD90EB63276aF2Fca897cC04D845AfD74f#writeContract) adresine ulaşıyoruz. 
+* Admin olan Metamask cüzdanımızı bağlıyoruz ve "approve" fonksiyonunu açıyoruz.
+* spender (address) bölümüne aşağıdaki adresi ekliyoruz.
+```
+0xc8E864f12c337Bdf6294a3DCeE0E565D2B1B4d90
+```
+* amount (uint256) bölümüne ise 1000 tCVP için yazıyoruz ve Write tuşuna basıyoruz. Cüzdana gelen bildirimleri onaylıyoruz.
+```
+1000000000000000000000
+```
+![kontrat açma](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/3a4e2181-961e-498b-995a-3c0d686cbcf8)
+
+## Stake işlemini yapıyoruz.
+[BURADAN](https://sepolia.etherscan.io/address/0xc8E864f12c337Bdf6294a3DCeE0E565D2B1B4d90#writeContract) kontrat adresine ulaşıyoruz.
+* Admin metamask cüzdanımızı bağlıyoruz. ve "registerAsKeeper" fonskiyonunu buluyoruz.
+* worker_ (address) bölümüne worker adresini ekliyorsunuz.
+* initialDepositAmount_ (uint256) bölümüne de yukarıdaki 10000 ile devem eden sayıları ekliyoruz.
+* Write butonuna basıyoruz ve cüzdanımıza gelen bildirimleri kabul edip onaylıyoruz.
+![keeper](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/f50ec67d-15fb-407f-9b88-bbe4bf77e968)
+## Notlar
+* Sepolia Geth senkronizasyonu tamamlandıktan sonra Dappnode panelimizden Packages bölümüne geliyoruz ve PowerAgent'i restart yapyıoruz.
+* [BURADAN](https://app.powerpool.finance/#/sepolia/ppv2/my-keepers) admin metamask cüzdanınızı bağlayarak kendi keeper ID'nizi öğrenebilirsiniz.
+  
