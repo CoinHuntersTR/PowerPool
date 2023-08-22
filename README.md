@@ -1,7 +1,7 @@
 # PowerPool
-![Ekran görüntüsü 2023-08-21 190255](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/a3c17b1b-4232-49ef-bd8a-719b32b11ae7)
+![Ekran görüntüsü 2023-08-21 190255](https://pbs.twimg.com/media/F23kSdDWsAE6uPA?format=png&name=small)
 ## Ödüllü Testnete Katılım
-* Ödüllü Testnete katılmak için [BURADAN]() formu doldurmayı UNTUMAYIN!
+* Ödüllü Testnete katılmak için [BURADAN](https://twitter.com/CoinHuntersTR/status/1688258870689329152) formu doldurmayı UNTUMAYIN!
 * Empowerchain [DİSCORD](https://discord.gg/5W5B2xTzzT) kanalına katılalım.
 
 ## Kurulum Öncesi Notlar
