@@ -57,39 +57,43 @@ dappnode_wireguard
 ```
 ![Ekran görüntüsü 2023-08-21 190255](https://640488913-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MJqrcOKqAefjDPcq_0d%2Fuploads%2FiWtiBVajYPYCcmbKmtL6%2Fimage.png?alt=media&token=39a5fe23-c5d0-42e5-8c5b-9587e72fb39d
 )
+* Buna benzer bir çıktı alıyoruz. Bu çıktıyı bir yere kayıt edelim.
+* WireGuard açıyoruz.
+![tunel](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/0aa43878-6e51-4636-a962-4af7b49fb451)
+* Buradan boş bir tunel açıp, gelen bilgileri siliyoruz ve kurulum yaparken aldığınız bilgileri buraya ekleyip, isim verip etkinleştiriyoruz.
+* Etklinleştirme işlemini yaptıktan sonra;
+* [BURADAKİ](http://my.dappnode/) adresten kurduğumuz node arayüzüne erişiyoruz.
+* İlk girişte bize username soracak admin yazıyoruz.
+* Şifremizi beliyoruz.
+* DİKKAT!! bu adımları tamamladıktan sonra size bir kod verecek şifrenizi yenilemeniz gerektiğinde bu koda ihtiyacınız olacak o nedenle kayıt etmeyi unutmayın.
+* Tekrar VPS panelimize dönelim.
+   
+## Gerekli Yazılımları yüklüyoruz.
 
-## Sync Kontrolü
-* False dönene kadar başka işlem yapmanıza gerek yok!
-* False döndükten sonra validator kurulumu yapıyoruz. Validator kurulumu için aşağıdaki notları okumayı unutmayın!
-* [BURADAN](https://empower.explorers.guru/) explorer giderek blok sayılarını kontrol edebilirsiniz.
 ```
-empowerd status 2>&1 | jq .SyncInfo
+sudo apt install nodejs
 ```
-![soncu](https://user-images.githubusercontent.com/111747226/243185688-d0a0386f-4c65-4b4a-a16c-476e36ff6036.jpg)
+```
+sudo apt install npm
+```
+```
+sudo apt install git
+```
 
-## Önemli Notlar.
-* Şuan Faucet yok bu nedenle bu bölümü faucet açıldıktan sonra yapacaksınız.
-* Şuan node kurup sync olmayı bekliyoruz. Faucet açıldıktan sonra aşağıdaki bölüme devam edeceğiz.
-
-## Validator Oluşturma;
-
-* "cüzdanadi" yazan yere kendi cüzdanadınızı yazacaksınız.
-* "twitter adresinizi ekleyebilirsiniz." yazan yere " kalacak şekilde twitter adresinizi ekleyebilirsiniz.
+## PowerPool indiriyoruz
 ```
-empowerd tx staking create-validator \
-  --amount=100000umpwr \
-  --pubkey=$(empowerd tendermint show-validator) \
-  --moniker=MonikerAdiniz \
-  --details="discord kullanıcı adınız" \
-  --website="twitter adresiniz olabilir" \
-  --chain-id=circulus-1 \
-  --commission-rate=0.10 \
-  --commission-max-rate=0.20 \
-  --commission-max-change-rate=0.01 \
-  --min-self-delegation=1 \
-  --from=cüzdanadi \
-  --gas-prices=0.1umpwr \
-  --gas-adjustment=1.5 \
-  --gas=auto \
--y
+git clone https://github.com/powerpool-finance/powerpool-agent-v2-compose
 ```
+```
+cd powerpool-agent-v2-compose
+```
+## npm yüklüyoruz
+
+```
+npm i
+```
+## Bu Bölüme DİKKAT
+* İki farklı metamask adresine ihityacımız var.
+* Birinci adresimiz Admin adres olacak. (Bu adrese test tCVP ve Sepoila ETH istememiz gerekiyor.)
+* İkinci adres Worker adresi olacak. Worker adresin Private key'ni alıyoruz ve bir yere not ediyoruz.
+  
