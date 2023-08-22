@@ -96,4 +96,6 @@ npm i
 * İki farklı metamask adresine ihityacımız var.
 * Birinci adresimiz Admin adres olacak. (Bu adrese test tCVP ve Sepoila ETH istememiz gerekiyor.)
 * İkinci adres Worker adresi olacak. Worker adresin Private key'ni alıyoruz ve bir yere not ediyoruz.
+* Metamask Private key'inizi;
+ ![metamask](https://user-images.githubusercontent.com/111747226/214062437-69e144d9-528f-4a17-b46a-a747c1d5284c.png)
   
