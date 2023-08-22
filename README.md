@@ -94,8 +94,31 @@ npm i
 ```
 ## Bu Bölüme DİKKAT
 * İki farklı metamask adresine ihityacımız var.
-* Birinci adresimiz Admin adres olacak. (Bu adrese test tCVP ve Sepoila ETH istememiz gerekiyor.)
+* Birinci adresimiz Admin adres olacak. (Bu adrese test tCVP ve Sepoila ETH istememiz gerekiyor.) [Sepoila ETH Faucet](https://sepoliafaucet.com/)
 * İkinci adres Worker adresi olacak. Worker adresin Private key'ni alıyoruz ve bir yere not ediyoruz.
-* Metamask Private key'inizi;
+* Metamask Private key'inizi aşağıdaki resimdeki işlemleri yaparak bulabilirsiniz.
  ![metamask](https://user-images.githubusercontent.com/111747226/214062437-69e144d9-528f-4a17-b46a-a747c1d5284c.png)
   
+* test tCVP için özel telegram grubundan talep edebilirsiniz.
+* "" dahil silip privatekey ve kendi belirlediğimiz şifreyi yazıp çalıştırıyoruz.
+  
+```
+node jsongen.js "workerprivatekey" "şifre"
+```
+* Bu adımları tamamladıktan sonra suncumuz için
+![utc](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/8943f87f-b54f-4a18-ae11-600bf865307c)
+*Resimdeki gibi UTC ile başlayan dosyayı bilgisayarımıza indiriyoruz.
+## Dappnode içine gerekli paketleri yüklüyoruz.
+* [Prysm Sepolia DAppNode package](http://my.dappnode/#/installer/%2Fipfs%2FQmT2vSKsKVTs7oFxYnnzb8cpWiKnMDvPLy1qnaLWfEfVkD)
+* Aşağıdaki gibi ayarları yapıp sonrasında, install diyoruz.
+   ![Prysm](https://user-images.githubusercontent.com/111747226/262366920-8e1bda9a-6b97-4139-993d-b60c2457c0c6.png)
+* [Geth Sepolia DAppNode package](http://my.dappnode/#/installer/%2Fipfs%2FQmNy6zTZM9LfHomWJpNYFWX6kJqz9Jgm5eragJagMwc4jk)
+ ![Ekran görüntüsü 2023-08-21 150925](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/65185640-7abd-4eec-b1d8-dd843a18d9ba)
+* [PowerAgent DAppNode package](http://my.dappnode/#/installer/%2Fipfs%2FQmWfQRMJmp9JmdPknMLpKsSNn9AErmp6WJhZ4jme4njK5M)
+![Ekran görüntüsü 2023-08-21 151013](https://github.com/CoinHuntersTR/PowerPool/assets/111747226/463f93ef-4149-48f4-9542-245ce7c7347d)
+*PowerAgent Dappnode kurarken sizden worker adresi isteyecek onu ekliyoruz. 
+* Biraz önce indirdiğimiz dosyayı yüklüyoruz.
+* şifre worker private key yüklerken yazdığımız şifreyi ekliyoruz.
+* web stock RPC adresine ws://sepolia-geth.dappnode:8546 bunu ekliyoruz.
+* kayıt edip yüklenmesini bekliyoruz.
+* 
